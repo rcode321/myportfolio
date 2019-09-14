@@ -1,0 +1,16 @@
+{
+  "name": "Raf-Portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://rcode321.github.io/myportfolio",
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}

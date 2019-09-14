@@ -1,0 +1,276 @@
+body {
+  background: #050505;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+
+h6 {
+  font-weight: 100;
+  padding: 0;
+  margin: 0;
+}
+
+.top-showcase {
+  background: #181616;
+  display: grid;
+  grid-template-rows: 500px 200px 50px;
+}
+
+.projectTitle {
+  display: grid;
+  background: #bf1b39;
+  border-radius: 12px;
+  width: 441px;
+  height: 116px;
+  justify-self: center;
+  grid-row: 3;
+  text-align: center;
+  color: #eeeeee;
+}
+span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  align-self: center;
+}
+ul {
+  padding: 20px;
+  margin: 0;
+}
+
+#hamburger {
+  display: none;
+}
+nav {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+nav a {
+  color: #f6f6e8;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+
+nav li {
+  display: inline-block;
+  padding: 30px;
+}
+
+li a:hover {
+  color: aqua;
+  transition: width 2s, height 4s;
+  transition-delay: 1s;
+}
+
+hr {
+  margin-top: 35px;
+}
+
+header {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #131313;
+  font-size: 39px;
+  /* padding: 150px; */
+  margin-top: 150px;
+}
+
+hr {
+  border: 3px solid #bf1b39;
+  width: 519px;
+  height: 0px;
+}
+
+p {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+  text-align: center;
+  width: 519px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* PROJECT-SECTION */
+.wrapper {
+  /* background-image: url("/IMG/codes-data-programming-225250.jpg"); */
+  background-size: cover;
+  max-width: 69rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+.background-image {
+  background-image: url("/dist/IMG/codes-data-programming-225250.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  /* height: 100%; */
+  z-index: -1;
+  min-height: 950px;
+}
+
+.overlay {
+  position: absolute;
+  width: 1440px;
+  /* height: 100%; */
+  min-height: 1900px;
+  left: 0px;
+  top: -1px;
+  background: #000000;
+  opacity: 0.8;
+  width: 100%;
+  z-index: -1;
+}
+.project {
+  /* margin-top: 250px; */
+  padding-top: 200px;
+  padding-bottom: 200px;
+  align-content: end;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+img {
+  width: 100%;
+}
+
+.pr:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.9);
+  transition: all 0.5s;
+  border-radius: 8px;
+  padding: 10px;
+  background: #3e6596;
+}
+
+.fontAwesome {
+  color: #eeeeee;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.fontAwesome-pr5 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* CONTACTS & SOCIAL MEDIA */
+
+footer {
+  width: 100%;
+  height: 300px;
+  background: #131313;
+  position: absolute;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 40px;
+}
+
+.fab {
+  color: #eeeeee;
+  padding: 10px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 843px) {
+  #projectTitle {
+    background: blueviolet;
+    width: 400px;
+    height: 100px;
+  }
+
+  #myLinks {
+    display: none;
+  }
+
+  #hamburger {
+    display: block;
+    color: #eeeeee;
+    position: relative;
+    top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+  }
+
+  header {
+    margin-top: 190px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+  }
+
+  hr {
+    width: 400px;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  #footer-h1 {
+    padding: 30px;
+    font-size: 2.2rem;
+  }
+  .fab {
+    font-size: 30px;
+  }
+}
+
+/* Mobile Version */
+@media screen and (max-width: 538px) {
+  #projectTitle {
+    background: rgb(212, 188, 47);
+    width: 100%;
+    height: 70px;
+  }
+
+  p {
+    font-size: 17px;
+    width: 80vw;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  hr {
+    width: 60vw;
+  }
+  .project {
+    margin: 0;
+  }
+
+  header {
+    margin-top: 90px;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wrapper {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+    padding: 29px;
+  }
+}
